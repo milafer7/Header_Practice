@@ -1,0 +1,127 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+  --font-adobe: "Assistant", sans-serif;
+  --gradient-decoration: radial-gradient( circle 939px at 0.5% 94.3%,  rgba(175,0,108,1) 1%, rgba(255,163,84,1) 40.6%, rgba(109,242,173,1) 70.1%, rgba(24,152,171,1) 92.2% );
+}
+  
+a {
+    text-decoration: none;
+    color: var(--color-letras);
+    text-transform: uppercase;
+    size: 13px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-family: var(--font-adobe);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+    size: 48px;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+
+.navbar_list {
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar_list li {
+    margin-left: 20px;
+    font-size: 13px ;
+}
+
+.navbar_list li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.445);
+    font-size: 12px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.navbar_list li a:hover {
+    color: #ffffff;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons .icon {
+    margin-left: 15px;
+}
+
+.header-icons .icon img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    transition: opacity 0.3s;
+}
+
+.header-icons .icon:hover img {
+    opacity: 0.7;
+}
+
+.gradiente{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: url(https://color.adobe.com/a75eec8308f0b7cf03da.png) center no-repeat;
+    background-size: cover;
+    
+}
+
+h2 {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+/* Media Queries */
+@media (min-width: 0px) and (max-width: 480px) {
+    .caja {
+        background-color: red;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .caja {
+        background-color: rgb(0, 255, 13);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .caja {
+        background-color: rgb(251, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .caja {
+        background-color: rgb(4, 0, 255);
+    }
+}
